@@ -1,0 +1,130 @@
+.app {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 30px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 12px 24px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.product-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+  padding: 16px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.product-card .favorite-btn,
+.product-card .expand-btn {
+  display: inline-block;
+  width: 90%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.product-card .favorite-btn {
+  background-color: #ffebeb;
+  color: #d9534f;
+}
+
+.product-card .favorite-btn:hover {
+  background-color: #d9534f;
+  color: white;
+  transform: scale(1.05);
+}
+
+.product-card .expand-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.product-card .expand-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.product-card.favorited {
+  border: 2px solid #ffc107;
+  background-color: #fff8e1;
+}
+
+.features {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.features li {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.features li::before {
+  content: "•";
+  color: #007bff;
+  margin-right: 8px;
+  font-size: 16px;
+}
