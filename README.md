@@ -59,7 +59,7 @@ Check out the live demo of the application: [Live Demo Link](#) _(https://produc
 
 Below is a preview of the application:
 
-![Action Figures Showcase Screenshot](#) _(./assets/sample.png)_
+![Action Figures Showcase Screenshot](#) _(.src/assets/sample.png)_
 
 ## License
 
